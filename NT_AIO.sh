@@ -129,6 +129,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/NT-A.I.O/main/dropbea
 bash <(curl -Ls https://github.com/lalfulsk/NT-A.I.O/raw/main/dropbear.sh)
 bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/NT-A.I.O/main/sshconfig.sh)
 bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/Auto/main/dnsdisable.sh)
+sudo systemctl start dropbear
+sudo systemctl enable dropbear
 systemctl restart NetworkManager
 curl ipinfo.io/org > /root/.isp
 curl ipinfo.io/city > /etc/xray/city
