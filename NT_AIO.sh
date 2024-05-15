@@ -240,7 +240,7 @@ wget -O /home/vps/public_html/index.html "https://github.com/Rerechan02/Rerechan
 cd /usr/bin
 rm -fr menu
 rm -fr /usr/sbin/menu
-wget https://github.com/lalfulsk/Auto-script/raw/main/menu.zip
+https://github.com/lalfulsk/Auto-script/raw/main/menu.zip
 unzip menu.zip
 rm -fr menu.zip
 chmod +x *
