@@ -225,7 +225,8 @@ echo "neofetch" >> .profile
 apt -y install nginx php php-fpm php-cli php-mysql libxml-parser-perl
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/Rerechan02/last/main/nginx.conf
+wget -O /etc/nginx/nginx.conf https://github.com/lalfulsk/NT-A.I.O/raw/main/nginx/nginx.conf
+wget -O /etc/nginx/fn.conf https://github.com/lalfulsk/NT-A.I.O/raw/main/nginx/fn.conf
 wget -O /etc/nginx/conf.d/funnvpn.conf https://raw.githubusercontent.com/Rerechan02/last/main/funnvpn.conf
 sed -i "s/xxx/${domain}/g" /etc/nginx/conf.d/funnvpn.conf
 wget -O /var/www/html/index.html https://github.com/Rerechan02/Rerechan02.github.io/raw/main/index.html
@@ -242,7 +243,7 @@ wget -O /home/vps/public_html/index.html "https://github.com/Rerechan02/Rerechan
 cd /usr/bin
 rm -fr menu
 rm -fr /usr/sbin/menu
-wget https://github.com/lalfulsk/Auto-script/raw/main/menu.zip
+wget https://github.com/lalfulsk/NT-A.I.O/raw/main/menu/menu.zip
 unzip menu.zip
 rm -fr menu.zip
 chmod +x *
