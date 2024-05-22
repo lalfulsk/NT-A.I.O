@@ -489,8 +489,8 @@ fi
 }
 
 run_jidat_ayaka() {
-# > Make a swap of 10GB
-dd if=/dev/zero of=/swapfile bs=1024 count=10485760
+# Create a 2 GB swap file
+dd if=/dev/zero of=/swapfile bs=1024 count=2097152
 mkswap /swapfile
 chown root:root /swapfile
 chmod 0600 /swapfile >/dev/null 2>&1
