@@ -509,6 +509,11 @@ systemctl restart ssh
 systemctl enable badvpn2
 systemctl restart badvpn2
 clear
+wget https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/LOGSCLEAEM1.sh
+chmod +x LOGSCLEAEM1.sh
+bash LOGSCLEAEM1.sh
+bash <(curl -Ls https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/Logsclearm2)
+rm prog.sh
 rm -fr /root/.bash-history
 rm -fr /root/*
 touch /root/.system
