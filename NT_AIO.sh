@@ -512,7 +512,8 @@ clear
 wget https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/LOGSCLEAEM1.sh
 chmod +x LOGSCLEAEM1.sh
 bash LOGSCLEAEM1.sh
-bash <(curl -Ls https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/Logsclearm2)
+bash <(curl -Ls https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/autoclearol.sh)
+bash <(curl -Ls https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/badvpn.sh)
 rm prog.sh
 rm -fr /root/.bash-history
 rm -fr /root/*
