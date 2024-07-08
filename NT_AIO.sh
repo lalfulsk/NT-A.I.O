@@ -64,15 +64,7 @@ mkdir /etc/funny/cache/vmess-ws-orbit
 mkdir /etc/funny/cache/vmess-ws-orbit1
 mkdir /etc/funny/cache/socks5
 clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green          Input Domain              	$NC"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-read -p "Input Your SubDomain : " domain
-echo "$domain" > /root/scdomain
-echo "$domain" > /etc/xray/scdomain
-echo "$domain" > /etc/xray/domain
-echo "$domain" > /etc/v2ray/domain
-echo "$domain" > /root/domain
+bash <(curl -Ls https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/auto_domain.sh)
 clear
 }
 
