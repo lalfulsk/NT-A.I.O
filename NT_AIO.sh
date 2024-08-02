@@ -124,14 +124,14 @@ bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/Auto/main/dnsdisable.
 sudo systemctl start dropbear
 sudo systemctl enable dropbear
 systemctl restart NetworkManager
-curl ipinfo.io/org > /root/.isp
-curl ipinfo.io/city > /etc/xray/city
-curl ipinfo.io/org > /root/.myisp
-curl ipinfo.io/city > /root/.city
-curl ipinfo.io/city > /root/.mycity
-curl ifconfig.me > /root/.ip
-curl ipinfo.io/region > /root/.region
-curl ifconfig.me > /root/.myip
+curl https://ipinfo.io/org > /root/.isp
+curl https://ipinfo.io/city > /etc/xray/city
+curl https://ipinfo.io/org > /root/.myisp
+curl https://ipinfo.io/city > /root/.city
+curl https://ipinfo.io/city > /root/.mycity
+curl https://ifconfig.me > /root/.ip
+curl https://ipinfo.io/region > /root/.region
+curl https://ifconfig.me > /root/.myip
 }
 
 run_cantikva() {
